@@ -1,0 +1,5 @@
+/.vscode
+/build
+/build_uf2
+
+.DS_Store
