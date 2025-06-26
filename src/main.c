@@ -3,7 +3,6 @@
  *
  * SPDX-License-Identifier: BSD-3-Clause
  */
-
 #include <stdio.h>
 
 #include "pico/stdlib.h"
@@ -655,7 +654,9 @@ static void core1_worker()
 int main(void)
 {
     set_sys_clock_48mhz();
+
     stdout_uart_init();
+
     // gpio_debug_pins_init();
     puts("USB SOUND CARD");
 
