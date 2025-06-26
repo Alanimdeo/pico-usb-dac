@@ -34,6 +34,6 @@ target_link_libraries(pico_usb_dac PRIVATE
 pico_add_extra_outputs(pico_usb_dac)
 
 add_custom_command(TARGET pico_usb_dac
-        POST_BUILD
-        COMMAND ${CMAKE_COMMAND} -E copy ${PROJECT_BINARY_DIR}/src/pico_usb_dac.uf2 ${PROJECT_SOURCE_DIR}/build_uf2/pico_usb_dac.uf2
+    POST_BUILD
+    COMMAND ${CMAKE_COMMAND} -E copy ${PROJECT_BINARY_DIR}/src/pico_usb_dac.uf2 ${PROJECT_SOURCE_DIR}/build_uf2/pico_usb_dac.uf2
 )
